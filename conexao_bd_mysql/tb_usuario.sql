@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3307
--- Tempo de geração: 17/10/2025 às 00:57
+-- Tempo de geração: 17/10/2025 às 01:26
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -27,6 +27,7 @@ SET time_zone = "+00:00";
 -- Estrutura para tabela `tb_usuario`
 --
 
+DROP TABLE IF EXISTS `tb_usuario`;
 CREATE TABLE `tb_usuario` (
   `usu_nome` varchar(80) NOT NULL,
   `usu_data_nascimento` date DEFAULT NULL,

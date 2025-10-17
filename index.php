@@ -33,15 +33,15 @@
 				enctype="multipart/form-data">
 				<div class="dados">
 					<h5>DADOS</h5>
-                    <div class="col-md-6">
+                    <div class="col-12">
 						<label class="form-label">NOME COMPLETO</label> <br>
 					<input type="text" name="txt_nome" placeholder="Nome completo" autofocus="" required size="80px" class="form-control"> <br>
                     </div>
-                    <div>
+                    <div class="col-md-6">
 						<label class="form-label">DATA DE NASCIMENTO</label> <br>
 					<input type="date" name="txt_data_nascimento" class="form-control">
                     </div>
-                    <div>
+                    <div class="col-md-6">
 						<label class="form-label">CPF</label> <br>
 					<input type="text" name="txt_cpf" placeholder="00000-000" class="form-control"> <br>
                     </div>
@@ -53,11 +53,11 @@
 						<label class="form-label">LOGRADOURO</label> <br>
 					<input type="text" name="txt_endereco" placeholder="Rua / Av: Tal, 000" size="80px" class="form-control"> <br>
                     </div>
-                    <div>
+                    <div class="col-md-6">
 						<label class="form-label">CIDADE</label> <br>
 					<input type="text" name="txt_cidade" placeholder="0000" class="form-control">
                     </div>
-                    <div>
+                    <div class="col-md-6">
 						<label class="form-label">CEP</label> <br>
 					<input type="text" name="txt_cep" placeholder="0000" class="form-control">
                     </div>
@@ -65,26 +65,26 @@
 						<label class="form-label">UF</label> <br>
 					<input type="text" name="txt_uf" placeholder="0000" class="form-control">
                     </div>
-                    <div>
+                    <div class="col-md-6">
 						<label class="form-label">COMPLEMENTO</label> <br>
 					<input type="text" name="txt_complemento" placeholder="0000" class="form-control">
                     </div>
-                    <div>
+                    <div class="col-md-6">
 						<label class="form-label">NUMERO</label> <br>
 					<input type="number" name="txt_numero" class="form-control"> <br>
                     </div>
 				</div>
 
 					<h5>CONTATO</h5>
-                    <div>
+                    <div class="col-md-6">
 						<label class="form-label">Telefone</label> <br>
 					<input type="text" name="txt_telefone" placeholder="Telefone Ex:(00) 0000-0000" class="form-control">
-                    </div>
-                    <div>
+                    </div class="col-md-6">
+                    <div class="col-md-6">
 						<label class="form-label">Celular</label> <br>
 					<input type="text" name="txt_celular" placeholder="Celular Ex:(00) 00000-0000" class="form-control"> <br>
                     </div>
-                    <div>
+                    <div class="col-md-6">
 						<label class="form-label">E-mail</label> <br>
 					<input type="text" name="txt_email" placeholder="emailteste@gmail.com" size="80px" class="form-control"> <br>
                     </div>

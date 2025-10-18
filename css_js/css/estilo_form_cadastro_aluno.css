@@ -6,14 +6,14 @@ body
  }
 
  #div_form
-{ background: #ffffff; padding: 2px; width: 705px; position: relative;
+{ background: #ffffff; padding: 2px; width: 705px; height: 700px; position: relative;
 	 margin: auto; border-radius: 10px;
 }
 
 
 fieldset
 {
-	border: 1px solid silver; margin: 8px;	padding: 10px;
-	border-radius: 5px;	
+	border: 1px; margin: 8px;	padding: 10px;
+	border-radius: 5px;
 }
 

@@ -33,28 +33,28 @@ $celular_dg = $_POST['txt_celular'];
 $email_dg = $_POST['txt_email'];
 
 // Script em SQL para inserir os dados na tabela
-$script_sql_cadastrar_aluno = 
-"insert into tb_alunos (alu_nome, alu_endereco, alu_telefone, alu_celular, alu_email, alu_data_nascimento, alu_rg, alu_cpf, alu_cod_turma, alu_foto)
+$script_sql_cadastrar_cliente = 
+"insert into tb_usuario (usu_nome, usu_data_nascimento, usu_cpf, usu_logradouro, usu_cep, usu_cidade, usu_uf, usu_numeto, usu_complemento, usu_telefone, usu_celular, usu_email)
 values 
 ('$nome_dg','$data_nascimento_dg', '$cpf_dg', '$endereco_dg', '$numero_dg', 
 '$cep_dg', '$cidade_dg', '$uf_dg', '$complemento_dg', '$telefone_img',
 '$celular_dg', '$email_dg'); ";
 
 // Executa o cadastro no BD
- if(mysqli_query($conexao_servidor_bd, $script_sql_cadastrar_aluno))
+ if(mysqli_query($conexao_servidor_bd, $script_sql_cadastrar_cliente))
     {   
         echo "<h1 class='alert alert-secondary' role='alert'
         style='text-align: center; padding: 50px;'>
-        Cadastro de aluno realizado com sucesso..</h1>"; 
+        Cadastro do cliente realizado com sucesso..</h1>"; 
 
     // A página fica parada por 3 segundos depois volta para o cadastro de alunos
-    echo "<meta http-equiv='refresh' content='3;url=form_cadastro_aluno.php'>";                
+    echo "<meta http-equiv='refresh' content='3;url=index.php'>";                
     } 
     else
     {
         echo"<div class='alert alert-danger' role='alert'
         style='text-align: center; padding: 50px; color:#fff;'>
-		<h1 align='center'>Falha no cadastro de aluno</h1><hr><p>";
+		<h1 align='center'>Falha no cadastro do cliente</h1><hr><p>";
 
         $erro = mysqli_error($conexao_servidor_bd);
         
@@ -62,7 +62,7 @@ values
         </b> Houve um erro na gravação de dados na tabela com a seguinte descrição: $erro </div>" ;
 
         // A página fica parada por 10 segundos depois volta para o cadastro de alunos
-        echo "<meta http-equiv='refresh' content='10;url=form_cadastro_aluno.php'>";
+        echo "<meta http-equiv='refresh' content='10;url=index.php'>";
     }  
 
 ?>

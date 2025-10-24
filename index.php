@@ -69,7 +69,7 @@
                         </div>
                         <div class="col">
                             <label class="form-label">CIDADE</label> <br>
-                            <input type="text" name="txt_cidade" placeholder="0000" class="form-control">
+                            <input type="text" name="txt_cidade" placeholder="" class="form-control">
                         </div>
                         <div class="col">
                             <label class="form-label">UF</label> <br>

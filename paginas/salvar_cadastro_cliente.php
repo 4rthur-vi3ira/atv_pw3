@@ -33,7 +33,7 @@ $celular_dg = $_POST['txt_celular'];
 $email_dg = $_POST['txt_email'];
 
 // Script em SQL para inserir os dados na tabela
-$script_sql_cadastrar_aluno = 
+$script_sql_cadastrar_cliente = 
 "insert into tb_alunos (usu_nome, usu_data_nascimento, alu_cpf, alu_logradouro, alu_cep, usu_cidade, usu_uf, usu_numero, usu_complemento, usu_telefone, usu_celular, usu_email)
 values 
 ('$nome_dg','$data_nascimento_dg', '$cpf_dg', '$endereco_dg', '$numero_dg', 
@@ -41,14 +41,14 @@ values
 '$celular_dg', '$email_dg'); ";
 
 // Executa o cadastro no BD
- if(mysqli_query($conexao_servidor_bd, $script_sql_cadastrar_aluno))
+ if(mysqli_query($conexao_servidor_bd, $script_sql_cadastrar_cliente))
     {   
         echo "<h1 class='alert alert-secondary' role='alert'
         style='text-align: center; padding: 50px;'>
         Cadastro de cliente realizado com sucesso..</h1>"; 
 
     // A página fica parada por 3 segundos depois volta para o cadastro de alunos
-    echo "<meta http-equiv='refresh' content='3;url=form_cadastro_aluno.php'>";                
+    echo "<meta http-equiv='refresh' content='3;url=index.php'>";                
     } 
     else
     {
@@ -62,7 +62,7 @@ values
         </b> Houve um erro na gravação de dados na tabela com a seguinte descrição: $erro </div>" ;
 
         // A página fica parada por 10 segundos depois volta para o cadastro de alunos
-        echo "<meta http-equiv='refresh' content='10;url=form_cadastro_aluno.php'>";
+        echo "<meta http-equiv='refresh' content='10;url=index.php'>";
     }  
 
 ?>

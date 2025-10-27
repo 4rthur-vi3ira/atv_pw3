@@ -34,7 +34,7 @@ $email_dg = $_POST['txt_email'];
 
 // Script em SQL para inserir os dados na tabela
 $script_sql_cadastrar_cliente = 
-"insert into tb_alunos (usu_nome, usu_data_nascimento, alu_cpf, alu_logradouro, alu_cep, usu_cidade, usu_uf, usu_numero, usu_complemento, usu_telefone, usu_celular, usu_email)
+"insert into tb_alunos (usu_nome, usu_data_nascimento, usu_cpf, usu_logradouro, usu_numero, usu_cep, usu_cidade, usu_uf, usu_complemento, usu_telefone, usu_celular, usu_email)
 values 
 ('$nome_dg','$data_nascimento_dg', '$cpf_dg', '$endereco_dg', '$numero_dg', 
 '$cep_dg', '$cidade_dg', '$uf_dg', '$complemento_dg', '$telefone_img',

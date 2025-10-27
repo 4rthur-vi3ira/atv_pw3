@@ -59,7 +59,7 @@
                         </div>
                         <div class="col">
                             <label class="form-label">NUMERO</label> <br>
-                            <input type="number" name="txt_numero" style="width: 240px;" class="form-control"> <br>
+                            <input type="number" name="txt_numero" placeholder="0" style="width: 240px;" class="form-control"> <br>
                         </div>
                     </div>
                     <div class="row g-3">
@@ -69,7 +69,7 @@
                         </div>
                         <div class="col">
                             <label class="form-label">CIDADE</label> <br>
-                            <input type="text" name="txt_cidade" placeholder="0000" class="form-control">
+                            <input type="text" name="txt_cidade" placeholder="" class="form-control">
                         </div>
                         <div class="col">
                             <label class="form-label">UF</label> <br>
@@ -97,7 +97,7 @@
                         </div>
                         <div class="col">
                             <label class="form-label">E-mail</label> <br>
-                            <input type="text" name="txt_email" placeholder="emailteste@gmail.com" size="80px"
+                            <input type="text" name="txt_email" placeholder="email@gmail.com" size="80px"
                                 style="width: 300spx;" class="form-control"> <br>
                         </div>
                     </div>

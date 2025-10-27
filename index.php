@@ -25,7 +25,7 @@
 
         <fieldset style="width: 685px;height: 680px; background-color: rgb(236, 143, 112);">
 
-            <form method="POST" action="salvar_cadastro_aluno_bd.php"
+            <form method="POST" action="salvar_cadastro_cliente.php"
                 style="width: 660px; padding: 20px; background-color: rgb(236, 143, 112);"
                 enctype="multipart/form-data">
                 <h3 style="margin: 0px; text-align: center; padding: 6px; top: 10px;">CADASTRO DE CLIENTE

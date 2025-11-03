@@ -26,7 +26,8 @@ SET time_zone = "+00:00";
 --
 -- Estrutura para tabela `tb_usuario`
 --
-
+CREATE DATABASE bd_atv_pw;
+USE bd_atv_pw;
 DROP TABLE IF EXISTS `tb_usuario`;
 CREATE TABLE `tb_usuario` (
   `usu_nome` varchar(80) NOT NULL,
